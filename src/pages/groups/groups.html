@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Groups</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="Home">
+
+
+  <h2>select a group</h2>
+
+  <ion-list>
+    <button ion-item *ngFor="let grp of itemTopGroups" (click)="onSelItem(grp)" class="home" >
+      <span> {{ grp.name }}</span>
+
+    </button>
+  </ion-list>
+
+</ion-content>

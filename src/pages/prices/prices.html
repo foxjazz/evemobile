@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Prices</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="Home">
+  <ion-label>{{itemType.type.name}}</ion-label>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-50>
+        <a>Jita Price</a>
+      </ion-col>
+      <ion-col>
+        {{itemType.Jitaprice}}
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col width-50>
+        <a>Rens Price</a>
+      </ion-col>
+      <ion-col>
+        {{itemType.Rensprice}}
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

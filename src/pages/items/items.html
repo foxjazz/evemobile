@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Items</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="Home">
+
+
+
+
+<ion-item class="home">
+  <ion-label>Filter:</ion-label> <ion-input #ioninput type="text" (keyup)="updateFilter(ioninput.value)"></ion-input>
+</ion-item>
+
+
+  <h2>select an item</h2>
+
+  <ion-list>
+    <button ion-item *ngFor="let oitem of itmFil" (click)="onSelItem(oitem)" class="home" >
+      <span> {{ oitem.type.name }}</span>
+
+    </button>
+  </ion-list>
+
+</ion-content>
